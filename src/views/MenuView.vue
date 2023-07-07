@@ -43,18 +43,17 @@ const events = ref<EventItem[]>([
 </script>
 
 <template>
-   <h1>Event For Good</h1>
+  <h1>Event For Good</h1>
   <main class="events">
-    <Cac v-for="event in events" :key="event.id" :event="event" ></Cac>
+    <Cac v-for="event in events" :key="event.id" :event="event"></Cac>
   </main>
-  
 </template>
 
 <style scoped>
 .events {
   display: flex;
   flex-direction: column;
-  
+
   text-align: right;
 }
 h4 {
