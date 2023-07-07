@@ -43,8 +43,8 @@ const events = ref<EventItem[]>([
 </script>
 
 <template>
+   <h1>Event For Good</h1>
   <main class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event" ></EventCard>
     <Cac v-for="event in events" :key="event.id" :event="event" ></Cac>
   </main>
   
@@ -61,4 +61,3 @@ h4 {
   font-size: 20px;
 }
 </style>
-
