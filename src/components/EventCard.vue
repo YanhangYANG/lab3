@@ -6,18 +6,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const event = ref({
-  id: 5928101,
-  category: 'animal welfare',
-  title: 'cat Adoption Day',
-  description: 'Find your new feeline friend at this event',
-  location: 'Meow Town',
-  date: 'January 28, 2022',
-  time: '12:00',
-  petAllowed: true,
-  organizer: 'Kat Laydee'
-})
+import type{ EventItem } from '@/type';
+import type{ PropType } from 'vue';
+const props = defineProps({
+  event: {
+    type: Object as PropType<EventItem>,
+    required: true,
+  },
+});
+
 </script>
 
 <style scoped>
